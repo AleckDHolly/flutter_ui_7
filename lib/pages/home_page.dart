@@ -154,7 +154,7 @@ class _HomePageState extends State<HomePage> {
                       fontWeight: FontWeight.w600),
                 ),
                 GradientText(
-                  "${_weather?.temperature.round() ?? 0.0}°C",
+                  "${_weather?.temperature.round() ?? 0}°C",
                   style: TextStyle(
                       color: Colors.white,
                       fontSize: 100,
