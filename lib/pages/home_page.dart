@@ -29,7 +29,7 @@ class _HomePageState extends State<HomePage> {
         _weather = weather;
       });
     } catch (e) {
-      debugPrint(e.toString());
+      debugPrint("${e.toString()} fuck");
     }
   }
 
@@ -86,7 +86,7 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: Colors.transparent,
         //cityName
         title: Text(
-          _weather?.cityName ?? "London",
+          _weather?.cityName ?? "Search a city..",
           style: TextStyle(
             color: Colors.white,
             fontWeight: FontWeight.bold,
@@ -154,7 +154,7 @@ class _HomePageState extends State<HomePage> {
                       fontWeight: FontWeight.w600),
                 ),
                 GradientText(
-                  "${_weather?.temperature.round() ?? 0}°C",
+                  "${_weather?.temperature.round() ?? 0.0}°C",
                   style: TextStyle(
                       color: Colors.white,
                       fontSize: 100,
